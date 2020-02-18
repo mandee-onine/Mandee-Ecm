@@ -1,0 +1,80 @@
+.placeOrder #quickLink {
+    /* grid-template-columns: repeat(3,140px); */
+    /* border-top: 1px solid #E5E5E5 !important; */
+    display: flex;
+    margin-top: 5px;
+    padding-top: 0px;
+    justify-content: center;
+    
+    flex-shrink: inherit;
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+      .placeOrder #quickLink a { 
+        display: grid; 
+        justify-items: center; 
+        align-items: center; 
+        text-decoration: none; 
+        color: black;
+        padding-left: 30px; 
+      }
+  
+      .placeOrder #quickLink img { width: 60px; height: 60px;  }
+  
+      .placeOrder #quickLink p { font-size: 12px; padding-left: 16px;}
+  /* .placeOrder #banner { 
+    grid-area: 7/1/8/11; background-image: url('https://st4.depositphotos.com/1672707/23245/v/1600/depositphotos_232457158-stock-illustration-attention-please-vector-banner-landing.jpg'); 
+    background-repeat: no-repeat; width: 100%; background-size: cover; height: 172px; } */
+  
+  .nav-link { font-size: 10px; /*padding: 1% 1% 2% 1%;*/ color: #716A6A; text-decoration: none; font-weight: bold; }
+  
+  .placeOrder #search #searchButton { display: none; }
+  .Btn{
+    display: flex;
+    margin: -50px;
+    position: absolute;
+    margin-top: -90px;
+    margin-bottom: 50px;
+    margin-left: 50%;
+  }
+  .btn-1{
+    background: #FAA519;
+    width: 160px !important;
+    height: 40px !important;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fefefe;
+    box-shadow: 2px 1px 5px 1px #222;
+    margin: 20px;
+  }
+  /* .btn-2{
+    width: 160px !important;
+    height: 40px !important;
+    background-color: #729133;
+    margin: auto;
+    border-radius: 10px;
+    text-transform: none !important;
+    box-shadow: 2px 1px 5px 1px #222;
+  } */
+  .showmore {
+  float: right;
+  text-align: right;
+  margin-top: 0px;
+  font-size: 16px;
+  padding-top: 20px;
+  }
+  .card{
+    margin: 10px;
+    border: 1px black solid;
+    padding: 10px;
+}

@@ -1,0 +1,136 @@
+.footer-area {
+    background:#4c4c4e ;
+    padding: 50px 0;
+    height: 250px;
+  }
+ .large_title {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: oswald,sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 28px;
+}
+
+.footer_title{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: oswald,sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 28px;
+}
+.tp_widgets .list li a {
+    color: #ffffff;
+    font-family: roboto,sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tp_widgets .list li {
+    margin-bottom: 12px;
+    color:#ffffff;
+}
+
+.ml-40{
+    margin-right: 40px;
+}
+
+.single-footer-widget .sm-head span {
+    position: relative;
+    margin-left: -40px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background: #384aeb;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.tp_widgets p {
+    color: #ffffff;
+}
+
+.single-footer-widget p {
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    background : #4c4c4e ;
+    padding: 32px;
+}
+
+footer h1{
+    color:white;
+}
+.icons{
+    width: 20px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    border-radius: 20px;    
+    margin-right: 10px;
+}
+.workwith{
+    display: grid;
+    grid-template-columns: 35% 35%;
+    justify-content: center;
+    margin-top: -230px;
+    font-stretch: extra-expanded;
+}
+.category-title{
+    padding: 50px 0 40px;
+}
+.content10 {
+    margin-left: 15px;
+    text-align: justify;
+    font-size: 14px !important;
+    font-weight: 400;
+    font-family: 'Roboto-Regular';
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+body{
+    font-family: Assistant-Regular !important;    
+    font-size: 14px;
+    color: #212529;
+}
+.footercontent {
+    text-align: justify;
+    font-size: 16px !important;
+    font-weight: bold;
+    font-family: 'Roboto-Regular';
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.contentInner {
+    font-weight: 400;
+    font-size: 13px !important;
+    font-family: 'Roboto-Regular';
+    line-height: 1.4;
+    margin-bottom: 7px;
+    margin-left: 30px;
+    margin-right: 20px;
+    text-align: justify;
+}
+.bullets li {
+    list-style-type: circle;
+    text-align: justify;
+}
+li span {
+    position: relative;
+    left: 0px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}

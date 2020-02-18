@@ -1,0 +1,17 @@
+/* .customselect{
+    border: 0 !important;  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-overflow:'';
+    text-indent: 0.01px;
+    text-overflow: "";  
+}
+.customselect::-ms-expand {
+    display: none;
+}
+.customselect-wrapper
+{
+    padding-left:0px;
+    overflow:hidden;
+} */

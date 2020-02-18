@@ -1,0 +1,159 @@
+﻿/*@font-face { font-family: 'Roboto-Black'; src: url('../fonts/Roboto-Black.eot'); src: url('../fonts/Roboto-Black.eot') format('embedded-opentype'), url('../fonts/Roboto-Black.woff2') format('woff2'), url('../fonts/Roboto-Black.woff') format('woff'), url('../fonts/Roboto-Black.ttf') format('truetype'), url('../fonts/Roboto-Black.svg#Roboto-Black') format('svg'); }
+@font-face { font-family: 'Roboto-BlackItalic'; src: url('../fonts/Roboto-BlackItalic.eot'); src: url('../fonts/Roboto-BlackItalic.eot') format('embedded-opentype'), url('../fonts/Roboto-BlackItalic.woff2') format('woff2'), url('../fonts/Roboto-BlackItalic.woff') format('woff'), url('../fonts/Roboto-BlackItalic.ttf') format('truetype'), url('../fonts/Roboto-BlackItalic.svg#Roboto-BlackItalic') format('svg'); }
+@font-face { font-family: 'Roboto-Bold'; src: url('../fonts/Roboto-Bold.eot'); src: url('../fonts/Roboto-Bold.eot') format('embedded-opentype'), url('../fonts/Roboto-Bold.woff2') format('woff2'), url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.ttf') format('truetype'), url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg'); }
+@font-face { font-family: 'Roboto-BoldItalic'; src: url('../fonts/Roboto-BoldItalic.eot'); src: url('../fonts/Roboto-BoldItalic.eot') format('embedded-opentype'), url('../fonts/Roboto-BoldItalic.woff2') format('woff2'), url('../fonts/Roboto-BoldItalic.woff') format('woff'), url('../fonts/Roboto-BoldItalic.ttf') format('truetype'), url('../fonts/Roboto-BoldItalic.svg#Roboto-BoldItalic') format('svg'); }
+@font-face { font-family: 'Roboto-Italic'; src: url('../fonts/Roboto-Italic.eot'); src: url('../fonts/Roboto-Italic.eot') format('embedded-opentype'), url('../fonts/Roboto-Italic.woff2') format('woff2'), url('../fonts/Roboto-Italic.woff') format('woff'), url('../fonts/Roboto-Italic.ttf') format('truetype'), url('../fonts/Roboto-Italic.svg#Roboto-Italic') format('svg'); }
+@font-face { font-family: 'Roboto-Light'; src: url('../fonts/Roboto-Light.eot'); src: url('../fonts/Roboto-Light.eot') format('embedded-opentype'), url('../fonts/Roboto-Light.woff2') format('woff2'), url('../fonts/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light.svg#Roboto-Italic') format('svg'); }
+@font-face { font-family: 'Roboto-LightItalic'; src: url('../fonts/Roboto-LightItalic.eot'); src: url('../fonts/Roboto-LightItalic.eot') format('embedded-opentype'), url('../fonts/Roboto-LightItalic.woff2') format('woff2'), url('../fonts/Roboto-LightItalic.woff') format('woff'), url('../fonts/Roboto-LightItalic.ttf') format('truetype'), url('../fonts/Roboto-LightItalic.svg#Roboto-LightItalic') format('svg'); }
+@font-face { font-family: 'Roboto-Medium'; src: url('../fonts/Roboto-Medium.eot'); src: url('../fonts/Roboto-Medium.eot') format('embedded-opentype'), url('../fonts/Roboto-Medium.woff2') format('woff2'), url('../fonts/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium.svg#Roboto-Medium') format('svg'); }
+@font-face { font-family: 'Roboto-LightItalic'; src: url('../fonts/Roboto-LightItalic.eot'); src: url('../fonts/Roboto-LightItalic.eot') format('embedded-opentype'), url('../fonts/Roboto-LightItalic.woff2') format('woff2'), url('../fonts/Roboto-LightItalic.woff') format('woff'), url('../fonts/Roboto-LightItalic.ttf') format('truetype'), url('../fonts/Roboto-LightItalic.svg#Roboto-LightItalic') format('svg'); }
+@font-face { font-family: 'Roboto-MediumItalic'; src: url('../fonts/Roboto-MediumItalic.eot'); src: url('../fonts/Roboto-MediumItalic.eot') format('embedded-opentype'), url('../fonts/Roboto-MediumItalic.woff2') format('woff2'), url('../fonts/Roboto-MediumItalic.woff') format('woff'), url('../fonts/Roboto-MediumItalic.ttf') format('truetype'), url('../fonts/Roboto-MediumItalic.svg#Roboto-MediumItalic') format('svg'); }
+@font-face { font-family: 'Roboto-Regular'; src: url('../fonts/Roboto-Regular.eot'); src: url('../fonts/Roboto-Regular.eot') format('embedded-opentype'), url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg'); }
+@font-face { font-family: 'Roboto-Thin'; src: url('../fonts/Roboto-Thin.eot'); src: url('../fonts/Roboto-Thin.eot') format('embedded-opentype'), url('../fonts/Roboto-Thin.woff2') format('woff2'), url('../fonts/Roboto-Thin.woff') format('woff'), url('../fonts/Roboto-Thin.ttf') format('truetype'), url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg'); }
+@font-face { font-family: 'Roboto-ThinItalic'; src: url('../fonts/Roboto-ThinItalic.eot'); src: url('../fonts/Roboto-ThinItalic.eot') format('embedded-opentype'), url('../fonts/Roboto-ThinItalic.woff2') format('woff2'), url('../fonts/Roboto-ThinItalic.woff') format('woff'), url('../fonts/Roboto-ThinItalic.ttf') format('truetype'), url('../fonts/Roboto-ThinItalic.svg#Roboto-ThinItalic') format('svg'); }
+@font-face { font-family: 'Assistant-Bold'; src: url('../fonts/Assistant-Bold.eot'); src: url('../fonts/Assistant-Bold.eot') format('embedded-opentype'), url('../fonts/Assistant-Bold.woff2') format('woff2'), url('../fonts/Assistant-Bold.woff') format('woff'), url('../fonts/Assistant-Bold.ttf') format('truetype'), url('../fonts/Assistant-Bold.svg#Assistant-Bold') format('svg'); }
+@font-face { font-family: 'Assistant-ExtraBold'; src: url('../fonts/Assistant-ExtraBold.eot'); src: url('../fonts/Assistant-ExtraBold.eot') format('embedded-opentype'), url('../fonts/Assistant-ExtraBold.woff2') format('woff2'), url('../fonts/Assistant-ExtraBold.woff') format('woff'), url('../fonts/Assistant-ExtraBold.ttf') format('truetype'), url('../fonts/Assistant-ExtraBold.svg#Assistant-ExtraBold') format('svg'); }
+@font-face { font-family: 'Assistant-ExtraLight'; src: url('../fonts/Assistant-ExtraLight.eot'); src: url('../fonts/Assistant-ExtraLight.eot') format('embedded-opentype'), url('../fonts/Assistant-ExtraLight.woff2') format('woff2'), url('../fonts/Assistant-ExtraLight.woff') format('woff'), url('../fonts/Assistant-ExtraLight.ttf') format('truetype'), url('../fonts/Assistant-ExtraLight.svg#Assistant-ExtraLight') format('svg'); }
+@font-face { font-family: 'Assistant-Light'; src: url('../fonts/Assistant-Light.eot'); src: url('../fonts/Assistant-Light.eot') format('embedded-opentype'), url('../fonts/Assistant-Light.woff2') format('woff2'), url('../fonts/Assistant-Light.woff') format('woff'), url('../fonts/Assistant-Light.ttf') format('truetype'), url('../fonts/Assistant-Light.svg#Assistant-Light') format('svg'); }
+@font-face { font-family: 'Assistant-Regular'; src: url('../fonts/Assistant-Regular.eot'); src: url('../fonts/Assistant-Regular.eot') format('embedded-opentype'), url('../fonts/Assistant-Regular.woff2') format('woff2'), url('../fonts/Assistant-Regular.woff') format('woff'), url('../fonts/Assistant-Regular.ttf') format('truetype'), url('../fonts/Assistant-Regular.svg#Assistant-Regular') format('svg'); }
+@font-face { font-family: 'Assistant-SemiBold'; src: url('../fonts/Assistant-SemiBold.eot'); src: url('../fonts/Assistant-SemiBold.eot') format('embedded-opentype'), url('../fonts/Assistant-SemiBold.woff2') format('woff2'), url('../fonts/Assistant-SemiBold.woff') format('woff'), url('../fonts/Assistant-SemiBold.ttf') format('truetype'), url('../fonts/Assistant-SemiBold.svg#Assistant-SemiBold') format('svg'); }*/
+
+.spnpopcss { color: #729133; text-transform: uppercase; font-weight: 600; cursor: pointer; }
+
+.productAdd { font-size: 14px; display: inline-block; line-height: 1.14; font-weight: bold; color: #B8B8B8; text-transform: capitalize; position: relative; /*top: 5px;*/ }
+
+.btn-circle { width: 45px; height: 45px; line-height: 45px; text-align: center; padding: 0; border-radius: 50%; }
+
+    .btn-circle i { position: relative; top: -1px; }
+
+.btn-circle-sm { width: 35px; height: 35px; line-height: 35px; font-size: 0.9rem; }
+
+.popover-content { font-size: 8px; text-align: left; }
+
+
+/*.modal-backdrop { background-color: transparent; }
+
+.modal-content { width: 60%; }
+
+.modal-header { background-color: black; height: 40px; border-top-left-radius: 0px; border-top-right-radius: 0px; }
+
+.modal-title { color: white;  font-size: 13px; }
+
+.modal-body button { text-transform: capitalize; color: forestgreen; }
+
+.modal-dialog { top: 150px; }*/
+
+.index-product-login-footer { background: #729133; width: 100%; height: 45px; color: #fff; /*text-transform: capitalize;*/ cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: 500; /*font-family:Calibri;*/ font-size: 15px; }
+
+
+.banner-area2-span { background: #729133; width: 60%; height: 50px; text-transform: capitalize; cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: bold; /*font-family: Calibri;*/ font-size: 14px; line-height: 1.14; letter-spacing: normal; text-align: center; color: #fefefe; }
+
+.Rectangle-8-Copy { width: 184px; height: 56px; background-color: #729133; margin: auto; }
+
+.Add-To-Cart-Copy { width: 78px; height: 16px; font-family: Assistant; font-size: 14px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.14; letter-spacing: normal; text-align: center; color: #fefefe; }
+
+.Quality-Goods { /*width: 281px;*/ height: 48px; /*font-family: Assistant;*/ font-size: 48px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1; letter-spacing: normal; color: #ffffff; text-align: center; }
+
+.At-the-Best-Prices { /*width: 176px;*/ height: 24px; /*font-family: Assistant;*/ font-size: 24px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1; letter-spacing: normal; color: #ffffff; text-align: center; }
+
+
+
+.cart-icon #totalItems { position: absolute; top: 0px; right: 13px; height: 18px; width: 18px; line-height: 18px; background-color: #FAA519; color: #ffffff; font-size: 1rem; font-weight: bold; text-align: center; border-radius: 50%; -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); -webkit-transition: -webkit-transform 0.2s 0s; -moz-transition: -moz-transform 0.2s 0s; transition: transform 0.2s 0s; }
+
+/*.product {
+    height: 24px;
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;*/
+/*color: var(--charcoal-grey);*/
+/*}*/
+
+/*.Price {
+    display: block;
+    height: 16px;
+    opacity: 0.8;*/
+/* font-family: Assistant; */
+/*font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;*/
+/*color: var(--charcoal-grey);*/
+/*}*/
+
+
+
+/*.smallPrice {
+    opacity: 0.8;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: var(--charcoal-grey);
+}*/
+
+
+.poffer { width: 72px !important; border-radius: 3px; /*border: solid 1px;*/ background-color: #ffffff; font-weight: 200 !important; font-size: 12px !important; }
+
+
+.pdropdown { width: 275px !important; height: 31px !important; opacity: 0.8; border-radius: 5px !important; }
+
+.pboxdropdown { height: 31px !important; opacity: 0.8; border-radius: 5px !important; }
+
+.probtnsize { width: 78px !important; /* height: 31px; */ opacity: 0.8; }
+
+/*.fried { min-height: 50px !important; padding-left: 5px; cursor: pointer; }*/
+
+.fried { min-height: 76px; padding-left: 5px; cursor: pointer; }
+
+.product { height: 24px; opacity: 0.8; font-size: 18px !important; font-weight: normal; font-style: normal; line-height: 1.33; letter-spacing: normal; padding: 5px; /*color: var(--charcoal-grey);*/ }
+
+.Price { display: block; height: 16px; opacity: 0.8; /* font-family: Assistant; */ font-size: 14px; font-style: normal; font-stretch: normal; line-height: 1.14; letter-spacing: normal; /*color: var(--charcoal-grey);*/ }
+
+.sellingPrice { color: #4F4F51; height: 16px; opacity: 0.8; /* font-family: Assistant; */ /* font-size: 12px; */ font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.33; letter-spacing: normal; }
+
+.smallPrice { opacity: 0.8; font-size: 12px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.33; letter-spacing: normal; color: #4c4c4e; }
+
+.offer { opacity: 0.8; /* font-family: Assistant; */ font-size: 14px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.14; }
+
+
+
+
+.Rectangle-7 { color: #729133; background-color: #ffffff; border-bottom: solid 1px; border-right: solid 1px; border-top: solid 1px; background-image: none; border-color: #729133; border-radius: 3px; margin-bottom: 15px; border-top-left-radius: 0; border-bottom-left-radius: 0; display: block; font-size: 11px; font-weight: bold; text-align: center; height: 25px; padding: 3px; }
+
+.Rectangle-9 { color: #ffc107; background-color: #ffffff; border-bottom: solid 1px; border-right: solid 1px; border-top: solid 1px; background-image: none; border-color: #ffc107; border-radius: 3px; border-top-left-radius: 0; border-bottom-left-radius: 0; display: none; font-size: 12px; font-weight: bold; text-align: center; height: 29px; padding-top: 4px; }
+
+.Rectangle-10 { color: #729133; background-color: #ffffff; border: solid 1px; background-image: none; border-color: #729133; border-radius: 3px; border-top-left-radius: 0; border-bottom-left-radius: 0; display: block; font-size: 12px; font-weight: bold; text-align: center; height: 24px; padding-top: 2px; width: 6rem; }
+
+.Rectangle-11 { color: #ffc107; background-color: #ffffff; border: solid 1px; background-image: none; border-color: #ffc107; border-radius: 3px; border-top-left-radius: 0; border-bottom-left-radius: 0; display: block; font-size: 12px; font-weight: bold; text-align: center; height: 24px; padding-top: 2px; width: 6rem; margin-top: 0.5rem; }
+
+.Rectangle-12 { color: #729133; background-color: #ffffff; border: solid 1px; background-image: none; border-color: #729133; border-radius: 3px; display: inline-block; font-size: 12px; font-weight: bold; text-align: center; height: 29px; padding-top: 2px; width: 10rem; text-transform: capitalize; }
+
+.btns-groupe .btnstandard { color: #6c757d !important; background-color: #fff !important; background-image: none !important; border-color: #6c757d !important; text-transform: capitalize; }
+
+    .btns-groupe .btnstandard:hover { color: #ffffff !important; border-color: #6c757d !important; background: #6c757d !important; }
+
+.btns-groupe .btn-outline-warning { color: #ffc107 !important; background-color: #fff !important; border-color: #ffc107 !important; }
+
+    .btns-groupe .btn-outline-warning:hover { color: #fff !important; background-color: #ffc107 !important; border-color: #ffc107 !important; }
+
+.Selling-Price { width: 61px; height: 16px; font-family: Assistant; font-size: 12px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.33; letter-spacing: normal; color: #6c757d; }
+
+.bgqty { width: 50px; height: 31px; border-radius: 5px; background-color: #729133; /*margin-left: 5px;*/ }
+
+.Qtytext { font-size: 14px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.14; letter-spacing: normal; color: #ffffff; /*width: 71px !important;*/ }
+/*#categoryTemplate .catgorybtn*/
+.catgorybtn { color: #729133 !important; background-color: #fff !important; border-color: #729133 !important; }
+
+    .catgorybtn:hover { color: #ffffff !important; border-color: #729133 !important; background-color: #729133 !important; }
+
+.Qtytxtbox { border-radius: 5px !important; border: solid 1px #729133 !important; width: 48px !important; height: 30px !important; text-align: center; margin-left: 5px; }
+
+.moreoffer { font-size: 12px !important; color: #80ABFF !important; text-transform: capitalize; }
+.searchText { font-size: 14px !important; }

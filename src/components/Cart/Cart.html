@@ -1,0 +1,426 @@
+﻿<!doctype html>
+<html class="no-js header" lang="en">
+
+
+<!-- Mirrored from mandeeonline.in/HTML/Cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Feb 2020 05:33:34 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Mandee B2B Ecommerce</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="manifest" href="site.webmanifest">-->
+    <link id="favicon" rel="shortcut icon" type="image/x-icon">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="../Assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../Assets/css/MandeeFontawesome.css">-->
+    <!--<link rel="stylesheet" href="../Assets/css/themify-icons.css">-->
+    <link rel="stylesheet" href="../Assets/css/meanmenu.css">
+    <link rel="stylesheet" href="../Assets/css/slick.css">
+    <link rel="stylesheet" href="../Assets/css/default.css">
+    <link rel="stylesheet" href="../Assets/css/nice-select.css">
+    <link rel="stylesheet" href="../Assets/css/main.css">
+    <link rel="stylesheet" href="../Assets/css/responsive.css">
+    <link rel="stylesheet" href="../Assets/css/mandee.css">
+    <link href="../Assets/css/Header.css" rel="stylesheet" />
+
+    <script id="mainmenuTemplate" type="text/template">
+        <li class="nav-item " id="lstmainmenu_{{CategoryID}}">
+            <a class="nav-link" href="#" onclick="location.href = '/HTML/CategoryProducts.html?category={{Category}}&categoryID={{CategoryID}}'">{{Category}} </a>
+        </li>
+    </script>
+    <script id="headerTemplate" type="text/template">
+        <header>
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center justify-content-between py-2">
+                    <div class="col-12 col-sm-4 col-md-5 d-none d-sm-block">
+                        <ul class="list-inline list-unstyled mb-0 d-flex align-items-center  d-none">
+                            <img src="../Assets/img/delivery-location.png" id="img_loc" style="display:none" />
+                            <li class="list-inline-item d-none d-sm-none d-md-none d-lg-inline-block location-mr" id="lstdelivryloc" style="visibility:hidden">
+                                <a href='#' class='lblDelivery' style="font-weight:normal !important;" data-html='true' data-toggle='popover' data-placement="bottom" title="Change Location" data-container="body"> Delivering to <br><strong class="lblDelivery"><span id="DeliveryLocation"></span></strong></a>
+                            </li>
+                            <li class="list-inline-item col-12 col-sm-12 col-md-8 p-0 ml-35">
+                                <form action="">
+                                    <div class="input-group">
+                                        <input type="text" id="txtSearch" class="form-control bg-gray border-green no-outile-shadow border searchText" placeholder="Search for anything" aria-label="Search for anything" aria-describedby="button-addon2" onkeypress='return callSubmit(event)'>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-success btn-sm font-weight-bold bg-gray text-green" type="button" id="button-addon2" onclick="SearchProducts($('#txtSearch').val())">Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-2 col-md-2">
+                        <a href="/index.html" id="lnk_logo"><img class="mx-auto d-block mb-2 mb-sm-0" src="../Assets/img/mandee_logo.png" alt="Mandee"></a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-5 quick-links" id="divManageAccount" style="display:none">
+                        <ul id="Credits" class="list-inline list-unstyled mb-0">
+                            <li class="list-inline-item credit mr-3 d-none d-sm-none d-md-none d-lg-inline-block" style="visibility: visible;">
+                               
+                                <span id="spnRemCredit"></span>
+                            </li>
+                            <li class="list-inline-item">
+                               
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="Wishlist.html"><img src="../Assets/img/shop-list.svg" alt="chat"></a>
+                            </li>
+                            <li class="list-inline-item" id="lstcart" style="display:block">
+                               
+                                <a class="cart-icon" id="icon" href="Cart.html">
+                                    <span id="totalItems">0</span>
+                                </a>
+                            </li>
+                            <li class="dropdown manage_account">
+                                <a href="../HTML/AccountDetails.html" id="navbarDropdown" role="button">
+                                    <strong class="lblHelloMaster"><span id="spnlogonuser"></span></strong><br><span class="lblHelloMaster">Manage account</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-5 quick-links" id="divLoginSignup" style="display:block">
+                        <ul class="list-inline list-unstyled mb-0" style="float:right">
+                            <li class="list-inline-item">
+                            </li>
+                            <li class="list-inline-item">
+                            </li>
+                            <li class="list-inline-item">
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="Cart_Empty"></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="SignIn.html"><strong class="st">Login</strong></a><span style="color:#FAA519"> / </span><a href="Home.html"><strong class="st">Sign Up</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                        </ul>
+                        <div id="divmainmenu" class="collapse navbar-collapse"></div>
+                        <ul class="navbar-nav ml-auto cell-center">
+                            <li class="nav-item">
+                                <!-- <i class="fas fa-phone-alt"></i> -->
+                                <i class="fas fa-phone"></i>
+                            </li>
+                            <li class="nav-item mar-right" id="lstSalesAgent" style="display:none">
+                                <span id="spnSalesAgntName">
+                                </span>
+                                <h6 class="text-right" id="spnSalesAgntNum"></h6>
+                            </li>
+                            <li class="nav-item">
+                                <span>
+                                    call center
+                                </span>
+                                <h6><span id="spnCallCenterNum"></span></h6>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                
+            </div>
+        </header>
+    </script>
+
+    <script id="divgrocerylist" type="text/template">
+        <div class="border-bottoms" id="{{ItemID}}">
+            <div class="groceriy-list mb-30">
+                <div class="groceriy-list-item">
+                    <div class="groceriy-list-img"><img src="{{ImageURL}}" alt="product"></div>
+                    <div class="groceriy-list-text">
+                        <h4 class="Product">{{ProductName}}</h4>
+                        <a class="Save-For-Later" style="color:#86AFFF !important;cursor:pointer;" onclick="SaveForLater('{{ItemID}}')">save for later</a>
+                    </div>
+                    <!--data-toggle="modal" data-target="#exampleModalCenter"-->
+
+                </div>
+                <div class="groceriy-list-item-2">
+                    <h4 class="price">₹ {{totalamount}}</h4>
+                    <h5 class="smprice">₹ {{amount}} x {{qunatity}}</h5>
+                    <h6 class="deliverydate">delivery on: {{DeliveryDate}}</h6>
+                    <h6 class="deliverydate" style="padding-top:10px">DiscountAmount: {{DiscountAmount}}</h6>
+                </div>
+                <div class="groceriy-list-item-3" id="quality5{{ControlID}}">
+                    <div class="dropdown">
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <button class="btn btn-info btn-md dropdown-toggle qtybtn" type="button" id="dropdownMenuButton{{ControlID}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #588c7e;">
+                                    QTY
+                                </button>
+
+                                <div class="dropdown-menu" id="ddldropdown" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">1 </a>
+                                    <a class="dropdown-item" href="#">2 </a>
+                                    <a class="dropdown-item" href="#">3 </a>
+                                    <a class="dropdown-item" href="#">4</a>
+                                    <a class="dropdown-item" href="#">5</a>
+                                    <a class="dropdown-item" href="#">5+</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="Save-For-Later" onclick="UpdateCartItems('{{ControlID}}');" style="text-transform: capitalize; color: #86AFFF;line-height: 1;cursor:pointer;">Update cart</a>
+
+                </div>
+
+                <div class="groceriy-list-item-3" id="quality6{{ControlID}}">
+                    <div class="value-button" id="decrease" onclick="decreaseValue('{{ControlID}}')" value="Decrease Value">-</div>
+                    <input type="number" id="number{{ControlID}}" class="inputQty" value={{qunatity}}>
+                    <div class="value-button" id="increase" onclick="increaseValue('{{ControlID}}')" value="Increase Value">+</div>
+                    <div>
+                        <a class="Save-For-Later" onclick="UpdateCartItems('{{ControlID}}');" style="text-transform: capitalize; color: #86AFFF;line-height: 1;cursor:pointer;">Update cart</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="groceriy-list-item-4">
+                        <img id="RemoveItem{{ItemID}}" src="../Assets/img/remove-cross.png" style="cursor:pointer" onclick="RemovecartItem('{{ItemID}}')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script id="SubtotCalc" type="text/template">
+        <div class="pay-ment-card-body">
+            <div class="pay-ment-card-item">
+                <h4> subtotal {{totalitems}} <span>₹ {{subtotal}}</span></h4>
+                <h5> discount <span>₹ {{discount}}</span></h5>
+            </div>
+            <div class="pay-ment-card-item">
+                <h4> total <span id="NetReceivable">₹ {{netreceivable}}</span></h4>
+                <h5> available credit <span id="AvailableCredit">₹ {{avaiablecreditlimit}}</span></h5>
+                <h5> payment on delivery <span id="Payincash">₹ {{payincash}}</span></h5>
+            </div>
+            <div class="pay-ment-card-item">
+                <!--justify-content-between"-->
+                <div id="imgdeliveryDate" class="d-flex">
+                    <div id="imgtruck">
+                        <img src="../Assets/img/delivery-truck.png" />
+                    </div>
+                    <div id="Date" style="margin-left:10px; margin-top:5px;">
+                        <h4>delivery on <b>{{deliverydate}}</b></h4>
+                    </div>
+                </div>
+            </div>
+            <h3>apply coupon</h3>
+            <div class="form">
+                <form action="">
+                    <input type="text" placeholder="enter code" id="txtCoupon">
+                    <button onclick="validateCoupon(); return false">apply</button>
+                </form>
+            </div>
+            <div class="invalid-feedback" style="width:max-content !important; text-align:center !important" id="divApplyCoupon">
+                <span id="spnCoupon"></span>
+            </div>
+            
+        </div>
+        
+    </script>
+
+    <script id="WishList" type="text/template">
+        <li class="lisaved" id="{{ProductCode}}" onclick="SaveItems('{{ProductCode}}')">
+            {{wishListName}}
+        </li>
+    </script>
+
+</head>
+
+<body>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZT5T8L" ; height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div class="loader"></div>
+    <div id="headercontainer"></div>
+    <main class="movecontent">
+        <section class="groceriy-list-wrapper">
+            <div class="container-fluid pl-40 pr-20">
+                <div class="row  justify-content-between">
+                    <div class="track-area">
+                    </div>
+                    <div class="groceriy-list-dots">
+                        <div class="groceriy-list-dot">
+                            <span class="gray active"></span>
+                            <h6>cart</h6>
+                        </div>
+                        <div class="groceriy-list-dot">
+                            <span class="gray"></span>
+                            <h6>address</h6>
+                        </div>
+                        <div class="groceriy-list-dot">
+                            <span class="gray "></span>
+                            <h6>payment</h6>
+                        </div>
+                        <div class="groceriy-list-dot">
+                            <span class="gray "></span>
+                            <h6>order Placed</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-area d-md-flex justify-content-between">
+                </div>
+                <div class="row" style="margin-top: -20px">
+                    <div class="col-md-7 col-lg-8 col-xl-9">
+                        <div class="resposive">
+                            <div class="col-xl-12 mb-30 px-0" id="groceryproducts">
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 col-lg-4 col-xl-3">
+                        <div class="pay-ment-card">
+                            <div id="paymentDet"></div>
+                            <div class="payment-btns">
+                                <a style="color:#fff !important;cursor:pointer !important;text-transform:none"
+                                    onclick="checkCartCount()">Choose a Delivery Address</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="Footer">
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <button type="button" id="Wishist" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"
+        style="display:none;">
+        wishList
+    </button>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="savedlisttitle">Saved Lists</h5>
+                    <a href="#" style="text-decoration-color:ActiveBorder">
+                        <span aria-hidden="true" id="createnew" onclick="CreateSavedList()">+Create New</span>
+                    </a>
+                </div>
+                <div class="modal-body" id="SavedlistItems" style="max-height: calc(100vh - 220px);overflow-y: auto;">
+                    <p style="font-size: 18px;">Select One From The Existing Lists</p>
+                    <ul id="listItems"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        id="savedlistclose">Close</button>
+                    <button type="button" class="btn btn-primary" id="CreateWishList" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" id="savedlist" class="btn btn-primary" data-toggle="modal" data-target="#myModal"
+        style="display:none;">
+        Launch demo modal
+    </button>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Create New Saved list</h4>
+                    <button type="button" id="closesavedlist" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-savedList" style="width:100%;text-align:inherit!important" role="form">
+                        <div style="margin-left: 19px;"><label>Saved List</label></div>
+                        <div class="col-lg-12">
+                            <input type="text" class="form-control" maxlength="25" id="listName"
+                                style="width: -webkit-fill-available !important;" placeholder="Saved List name"
+                                required />
+                            <div class="invalid-feedback">
+                                Please provide a saved list name.
+                            </div>
+                        </div>
+                    </form>
+                    <div style="padding: 15px;">
+                        <button type="button" id="Productcode" style="color: White;margin-left: 42%;"
+                            class="btn btn-primary btn-sm">
+                            save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS here -->
+    <!--<script src="../Assets/js/vendor/modernizr-3.5.0.min.js "></script>
+    <script src="../Assets/js/vendor/jquery.min.js"></script>-->
+    <script src="../Assets/js/jquery3.2.1.js"></script>
+    <script src="../Assets/js/popper.min.js"></script>
+    <script src="../Assets/js/sweetalert.js" defer></script>
+    <script src="../Assets/js/vendor/common5438.js?v=1.2.0" defer></script>
+    <script src="../Assets/js/vendor/Cart23cd.js?v=1.2.1" defer></script>
+    <script src="../Assets/js/bootstrap.min.js" defer></script>
+    <!--<script src="../Assets/js/owl.carousel.min.js "></script>-->
+    <script src="../Assets/js/slick.min.js" defer></script>
+    <script src="../Assets/js/jquery.meanmenu.min.js" defer></script>
+    <script src="../Assets/js/jquery.nice-select.min.js" defer></script>
+    <script src="../Assets/js/popper.min.js" defer></script>
+    <script src="../Assets/js/main.js" defer></script>
+    <script src="../Assets/js/TawkTo.js" defer></script>
+    <!--<script src="../Assets/js/GoogleAnalytics.js" defer></script>-->
+    <script src="../Assets/js/GoogleTagManager.js" defer></script>
+
+
+
+    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+    <script src="../../maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <div id="popover-content" class="hide" style="display:none;">
+        <form class="form-inline" style="width:100%;text-align:inherit!important" role="form">
+            <div class="form-group" id="divpopover">
+                <input type="text" class="form-control" id="pincode" maxlength="6"
+                    onkeypress='return isNumberKey(event)' placeholder="Enter your pincode" name="pincode"
+                    style="width:137px;padding-left:5px;" required>
+                <button class="btn btn-success btn-circle btn-circle-sm m-1" onclick="fnLocationChange()">GO</button>
+                <!--<div class="invalid-feedback">
+                    Enter ZipCode.
+                </div>-->
+            </div>
+        </form>
+        <span class="error"> </span>
+        <hr class="popover-hr">
+        <div style="text-align:center">
+            <a id="AllLocations" style="color:blue;font-size:12px;text-decoration:underline;cursor:pointer"
+                onclick="FnLocations()">View All Locations</a>
+        </div>
+
+
+    </div>
+
+
+
+    <button type="button" id="GetLocations" class="btn btn-primary" data-toggle="modal" data-target="#Locations"
+        style="display:none;">
+        Locations
+    </button>
+    <div class="modal fade" id="Locations" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">All Locations</h4>
+                    <button type="button" id="close" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" style="align-items:center;max-height: calc(100vh - 220px);overflow-y: auto;">
+                    <div id="AddressLocations"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
